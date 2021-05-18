@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("yaseensec/hellonode")
+        app = docker.build("yaseenins/hellonode")
     }
 
     stage('Test image') {
