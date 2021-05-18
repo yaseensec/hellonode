@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("upasanatestgit/hellonode")
+        app = docker.build("yaseensec/hellonode")
     }
 
     stage('Test image') {
@@ -29,7 +29,7 @@ node {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. 
          *docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials'*/
-           sh 'sudo docker login -u "upasanatestdocker" -p "Zephyr@17" docker.io'
+           sh 'sudo docker login -u "yaseenins" -p "!@Asur2020!@" docker.io'
                
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
